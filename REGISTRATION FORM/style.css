@@ -1,0 +1,109 @@
+@font-face {
+    font-family: Norse;
+    src: url(assets/Norse-Bold.otf);
+    font-weight: bold;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  overflow-y: hidden;
+}
+
+body {
+
+  height: 100vh;
+  display: flex;
+}
+
+.sidebar-container{
+    background-image: url("assets/bgg.jpg");
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    height: 100%;
+    width: 40%;
+}
+
+.sidebar-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200px;
+    background-color: rgba(0,0,0, 0.5);
+    height: 100px;
+    padding: 20px;
+}
+
+.sidebar-wrapper img{
+    position:relative;
+    height: 150%;
+    font-weight: bolder;
+}
+
+.sidebar-wrapper p{
+    color: white;
+    font-weight: bolder;
+    font-size: 5rem;
+    font-family: Norse;
+}
+
+.main-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width:60%;
+    background-color: lightgrey;
+}
+
+.header{
+    padding: 20px;
+    font-size: 1.5rem;
+}
+
+.card{
+    width: 100%;
+    flex:0.75;
+}
+
+.card fieldset{
+    border: none;
+    margin: 20px ;
+}
+
+.card fieldset input{
+    margin-right: 20px ;
+}
+
+.card .white{
+    background-color: white;
+    padding: 20px;
+}
+
+.card  button{
+    background-color: #596D48;
+    color:white;
+    border: none;
+    margin: 40px 0 0 40px;
+    padding: 10px;
+    border-radius: 10px;
+    width: 150px;
+}
+
+.card p{
+    margin: 10px 0 0 40px;
+}
+.footer{
+    padding: 20px;
+}
+
+input:invalid{
+    border: 2px solid red;
+}
+input:valid{
+    border: 2px solid green;
+}
